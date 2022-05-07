@@ -1,38 +1,449 @@
-.App {
+body {
+  background-image: url("./Assets/7dcoders-background.jpg");
+
+  /* border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;*/
+}
+
+.logo {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.85em;
+  color: red;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-btn {
+  margin: auto;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  height: 35px;
+  width: 90vw;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  /* padding: 0px;
+  border: none;
+  box-shadow: 3px 3px rgb(94, 89, 89); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-button {
+  padding: 0px;
+  border: none;
+  margin: 20px 40px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.imgsrc {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.profile-wrapper {
+  border: 3px solid red;
+  color: red;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 200px;
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.heading-handle {
+  color: red;
+  font-size: 1.8em;
+  font-weight: bold;
+  position: relative;
+  bottom: 80px;
+  position: relative;
+  left: -7px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-wrapper {
+  /* width: 70%; */
+  text-align: center;
+  padding: 50px;
+  border: 3px solid red;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+}
+
+.position {
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.add-engineer {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 0px;
+  border: none;
+  box-shadow: 3px 3px rgb(94, 89, 89);
+}
+input {
+  border-radius: 5px;
+  height: 4vh;
+}
+select {
+  border-radius: 5px;
+  height: 6vh;
+  margin-top: 20px;
+}
+.color-bar {
+  border-radius: 5px;
+  height: 6vh;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-check-input {
+  width: 15vw;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.fruit-image-form {
+  border-radius: 8px;
+  width: 63vw;
+  margin-top: 20px;
+  display: flex;
+}
+.onbording {
+  position: relative;
+  bottom: 160px;
+}
+/* this is new  code */
+/* .handle-cont-div {
+  font-size: 2rem;
+} */
+
+.profile-detail {
+  text-align: center;
+  width: 100%;
+}
+
+.profile-answers {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.gap {
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+  font-size: 0rem;
+}
+/* this is end of it  */
+@media screen and (min-width: 412px) {
+  .fruit-image-form {
+    border-radius: 8px;
+    width: 75vw;
+    margin-top: 20px;
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+}
+.fott-wrap {
+  margin-left: 5px;
+}
+@media screen and (min-width: 360px) {
+  .fruit-image-form {
+    border-radius: 8px;
+    width: 70vw;
+    margin-top: 20px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-wrapper button {
+    width: 30%;
+    margin: 5px;
+  }
+  .card-wrapper {
+    text-align: center;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .color-bar {
+    border-radius: 5px;
+    height: 6vh;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .logo {
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .heading-handle {
+    margin-left: -228px;
+  }
+  .onbording {
+    position: relative;
+    bottom: 140px;
+    right: 100px;
+  }
+  h1 {
+    margin-left: 30px;
+    font-size: 1.85em;
+    color: red;
+    text-align: left;
+  }
+
+  .profile-wrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .form-wrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .image-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  form {
+    margin-left: 272px;
+  }
+  .card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  .add-btn {
+    margin: auto;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70vw;
+    margin-left: 20px;
+  }
+  /* this is were it sart */
+  /* .profile-wrapper {
+    margin-top: 3rem;
+  } */
+
+  .heading-handle {
+    position: relative;
+    left: -203px;
+  }
+
+  .handle-cont-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-detail {
+    text-align: end;
+    width: 45%;
+  }
+
+  .profile-answers {
+    font-weight: bold;
+    text-align: left;
+    width: 45%;
+  }
+
+  .gap {
+    visibility: hidden;
+    width: 10%;
+  }
+  /* this is t6he end */
+  /* .handle-cont-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  } */
+  .span-time {
+    position: relative;
+    left: 40px;
+  }
+  .span-time1 {
+    position: relative;
+    right: 70px;
+  }
+  .span-color {
+    position: relative;
+  }
+  .span-color1 {
+    position: relative;
+    right: 130px;
+  }
+  .span-lang {
+    position: relative;
+    right: 90px;
+  }
+  .spanlang1 {
+    position: relative;
+    right: 170px;
+  }
+  .span-theme {
+    position: relative;
+    right: 20px;
+  }
+  .span-theme1 {
+    position: relative;
+    right: 110px;
+  }
+  .span-snack {
+    position: relative;
+  }
+  .span-snack1 {
+    position: relative;
+    right: 80px;
+  }
+  .span-music {
+    position: relative;
+  }
+  .span-music1 {
+    position: relative;
+    right: 80px;
+  }
+  .span-weath {
+    position: relative;
+  }
+  .span-weath1 {
+    position: relative;
+  }
+  .image-form-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5rem;
+  }
+  .fruits1-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32px;
+    margin-left: -87px;
+  }
+  .fruits2-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-check-input {
+    width: 15vw;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .fruit-image-form {
+    border-radius: 8px;
+    width: 21vw;
+    margin-top: 20px;
+    display: flex;
+  }
+  .handle-move {
+    position: relative;
+    right: 360px;
+    top: 25px;
+    font-size: 20px;
+  }
+  .text-move {
+    position: relative;
+    right: 340px;
+    top: 51px;
+    font-size: 20px;
+  }
+
+  .onbording {
+    position: relative;
+    bottom: 140px;
+    right: 70px;
+  }
+  .image-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card-button {
+    padding: 0px;
+    border: none;
+    margin: 20px 40px 10px;
+    box-shadow: 3px 3px rgb(94, 89, 89);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-wrapper button {
+    margin: 5px;
+    width: 18%;
+  }
+  .card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+  .heading-handle {
+    position: relative;
+    right: 207px;
+  }
+  form {
+    max-width: 50%;
+  }
+
+  .image-form-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .fruit-image-form {
+    width: 80%;
   }
 }
